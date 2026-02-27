@@ -6,3 +6,6 @@ printf(&quot;Before Exit\n&quot;);
 exit(0);
 printf(&quot;After Exit\n&quot;);
 }
+
+Output
+Before Exit
