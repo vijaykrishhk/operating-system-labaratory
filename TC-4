@@ -1,0 +1,17 @@
+#include &lt;stdio.h&gt;
+#include &lt;unistd.h&gt;
+#include &lt;sys/wait.h&gt;
+int main() {
+if (fork() == 0) {
+printf(&quot;Child Process\n&quot;);
+} else {
+wait(NULL);
+printf(&quot;Parent Process\n&quot;);
+}
+return 0;
+}
+
+Output:
+
+Child Process
+Parent Process
