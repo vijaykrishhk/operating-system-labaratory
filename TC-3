@@ -1,0 +1,14 @@
+#include &lt;stdio.h&gt;
+#include &lt;unistd.h&gt;
+int main() {
+printf(&quot;Before exec\n&quot;);
+execl(&quot;/bin/ls&quot;, &quot;ls&quot;, NULL);
+printf(&quot;After exec\n&quot;);
+return 0;
+}
+
+Output:
+
+Before exec
+file1.c
+a.out
