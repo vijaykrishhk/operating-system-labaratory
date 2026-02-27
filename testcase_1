@@ -1,0 +1,20 @@
+Program
+#include &lt;stdio.h&gt;
+#include &lt;fcntl.h&gt;
+#include &lt;unistd.h&gt;
+int main() {
+int fd = open(&quot;test.txt&quot;, O_RDONLY);
+if (fd &lt; 0) {
+printf(&quot;File not found\n&quot;);
+} else {
+printf(&quot;File opened\n&quot;);
+close(fd);
+printf(&quot;File closed\n&quot;);
+}
+return 0;
+}
+
+
+Output:
+File opened
+File closed
