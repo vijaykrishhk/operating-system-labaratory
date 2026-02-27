@@ -1,0 +1,8 @@
+Program
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+int main() {
+printf(&quot;Before Exit\n&quot;);
+exit(0);
+printf(&quot;After Exit\n&quot;);
+}
